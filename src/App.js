@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Sold from './components/Sold'
+import Listed from './components/Listed'
+import Map from './components/Map'
+import Query from './components/Query'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+        <header>
+          <h1>eBay Inventory Manager</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <main>
+          <Sold />
+          <Listed />
+          <Map />
+          <Query />
+        </main>
       </div>
     );
   }
